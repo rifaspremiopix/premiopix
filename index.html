@@ -796,7 +796,7 @@ function renderRifa(data){
   });
 
   function shareWhatsApp() {
-    const text = encodeURIComponent(`Participe da rifa *${rifa.nome}*! São 100 números por ${brl(rifa.preco)}, com prêmios de ${brl(rifa.premios.primeiro)} e ${brl(rifa.premios.segundo)}. Compre seu número e boa sorte! Link: ${window.location.href}`);
+    const text = encodeURIComponent(`Participe da rifa *${rifa.nome}*! São 100 números, cada unid. ${brl(rifa.preco)}, com prêmios de ${brl(rifa.premios.primeiro)} e ${brl(rifa.premios.segundo)}. Compre seu número e boa sorte! Link: ${window.location.href}`);
     const url = `https://wa.me/?text=${text}`;
     window.open(url, '_blank');
   }
@@ -898,4 +898,5 @@ RIFAS_DATA.forEach(renderRifa);
 
 </script>
 </body>
+
 </html>
